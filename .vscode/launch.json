@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": ["https://www.apple.com/105/media/us/iphone-16e/2025/d9015f23-5cc1-45b4-b25a-2b1caee9d7ac/films/announcement/iphone-16e-announcement-tpl-us-2025_16x9.m3u8", "/Users/jamesn/tmp/testdl"],
+            "cwd": "${workspaceFolder:aapl-media-dl}",
+            "name": "Debug aapl-media-dl",
+            "program": "${workspaceFolder:aapl-media-dl}/.build/debug/aapl-media-dl",
+            "preLaunchTask": "swift: Build Debug aapl-media-dl"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:aapl-media-dl}",
+            "name": "Release aapl-media-dl",
+            "program": "${workspaceFolder:aapl-media-dl}/.build/release/aapl-media-dl",
+            "preLaunchTask": "swift: Build Release aapl-media-dl"
+        }
+    ]
+}
